@@ -39,3 +39,34 @@ Recieve meals at convenient time: Best chefs in town will cook your selected mea
 
 ### Omnifood works with any diet
 
+Vegetarian
+Vegan
+Pescatarian
+Gluten-free
+Lactose-free
+Keto
+Paleo
+Low FOOMAP
+Kid-friendly
+
+### Sample meals
+
+**Omnifood AI chooses from 5,000+ recipes**
+
+Meal 1: Japanese Gyozas
+
+- Category: Vegetarian
+- Calories: 650
+- NutriScore (Registered): 74
+- Average rating: 4.9
+- Number reviews: 537
+
+Meal 2: Avocado Salad
+
+
+
+
+
+
+
+

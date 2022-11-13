@@ -123,8 +123,46 @@ span{
     font-weight: 600;
 }
 
+/*************************/
+/*  FEATURED-IN SECTION  */
+/*************************/
+
+.Featured-In{
+  padding: 4.5rem 0 3.2rem 0;
+}
+
+.heading-featured-in{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.75px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 1.8rem;
+}
+
+.logos{
+  display: flex;
+  justify-content: space-around;   
+}
+
+.logos img{
+    height: 3.2rem;
+    filter: brightness(0);
+    opacity: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
 /************************/
-/* HOW OIT WORKS SECTION  */
+/* HOW IT WORKS SECTION  */
 /***********************/
 
 .section-how{
@@ -180,4 +218,55 @@ span{
     padding-bottom: 45%;
     background-color: rgb(253, 236, 181);
     z-index: -1;
+}
+
+/********************/
+/* MEALS SECTION   */
+/*******************/
+
+.meals{
+    padding: 9.6rem 0;
+}
+
+.meal-title {
+    font-size: 2.0rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 3.2rem;
+}
+.tag{
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    font-size: 1.0rem;
+    text-transform: uppercase;
+    background-color: #51cf66;
+    color: #555;
+    border-radius: 1rem;
+}
+
+.meal-attributes{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.9rem;
+}
+
+.meal-attribute{
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.meal-img{
+    width: 50%;
+}
+.meal-attribute span{
+    color: #444;
+}
+
+.meal-icon{
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #e67e22;
 }
