@@ -95,7 +95,7 @@ body{
     text-decoration: none;
 
     /* Put transition an original "state" */
-    transition: background-color 0.7s;
+    transition: all 0.7s;
 }
 
 .btn--full:link, .btn--full:visited{
@@ -168,6 +168,7 @@ body{
     color: chocolate;
     margin-bottom: 1.6rem;
     text-transform: uppercase;
+    letter-spacing: 0.8px;
 }
 
 .heading-tertiary{
@@ -178,5 +179,33 @@ body{
 }
 
 .strong{
-    font-weight: 700;
+    font-weight: 500;
 }
+
+.margin-right-sm{
+    margin-right: 1rem !important;
+}
+
+.margin-btm-sm{
+    margin-bottom: 4.8rem !important;
+}
+
+.link:hover,
+.link:visited{
+  display: inline-block;
+  color: #e67e22;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  transition: all 0.3s;
+ }
+
+ .link:hover,
+ .link:active{
+    color: chocolate;
+    border-bottom: 1px solid transparent;
+ }
+
+ .center-text{
+    text-align: center;
+ }

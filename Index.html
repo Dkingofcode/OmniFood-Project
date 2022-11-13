@@ -13,7 +13,7 @@
 </head>
 <body>
      <header class="header">
-       <img class="logo" alt="Omnifood logo" src="omnifood-logo.png" />
+       <img class="logo" alt="Omnifood logo" src="img/logos/omnifood-logo.png" />
        <nav class="main-nav">
          <ul class="main-nav-list">
            <li><a class="main-nav-link" href="#">Section 1</a></li>
@@ -40,11 +40,11 @@
      <a href="#" class="btn btn--dull">Learn more &darr;</a>
      <div class="delivered-meals">
         <div class="delivered-imgs">
-            <img src="4.jpg" alt="Customer photo" />
-            <img src="32.jpg" alt="Customer photo" />
-            <img src="79.jpg" alt="Customer photo" />
-            <img src="97.jpg" alt="Customer photo" />
-            <img src="4.jpg" alt="Customer photo" />
+            <img src="img/Customer/customer1.jpg" alt="Customer photo" />
+            <img src="img/Customer/customer4.jpg" alt="Customer photo" />
+            <img src="img/Customer/customer5.jpg" alt="Customer photo" />
+            <img src="img/Customer/customer3.jpg" alt="Customer photo" />
+            <img src="img/Customer/customer1.jpg" alt="Customer photo" />
         </div>
         <p class="delivered-text"> <span>250,000+</span> meals delivered last year!</p>
       </div>
@@ -60,15 +60,15 @@
         <div class="container">
           <h2 class="heading-featured-in">As featured</h2>
           <div class="logos">
-            <img src="Ominfoodbusiness-insider.png" />
+            <img src="img/logos/Ominfoodbusiness-insider.png" />
             
-            <img src="Omnifoodforbes.png" />
+            <img src="img/logos/Ominfoodusa-today.png" />
             
-            <img src="Ominfoodusa-today.png" />
+            <img src="img/logos/Omnifoodforbes.png" />
             
-            <img src="Omnifoodtechcrunch.png" />
+            <img src="img/logos/Omnifoodtechcrunch.png" />
             
-            <img src="Omnifoodthe-new-york-times.png" />
+            <img src="img/logos/Omnifoodthe-new-york-times.png" />
           </div>
         </div>
     </section>
@@ -98,12 +98,12 @@
          </div>
  
          <div class="step-img-box">
-            <img src="img/app-screen-1.png" class="step-img" alt="Iphone app preferences selection screen">
+            <img src="img/app/app-screen-1.png" class="step-img" alt="Iphone app preferences selection screen">
          </div>
 
          <!---   STEP 02  ---->
          <div class="step-img-box">
-            <img src="img/app-screen-2.png" class="step-img" alt="Iphone app meal approval screen">
+            <img src="img/app/app-screen-2.png" class="step-img" alt="Iphone app meal approval screen">
          </div>
 
         <div class="step-text-box">
@@ -128,7 +128,7 @@
            </div>         
 
         <div class="step-img-box">
-            <img src="img/app-screen-3.png" class="step-img" alt="Iphone app meal delivery selection screen">
+            <img src="img/app/app-screen-3.png" class="step-img" alt="Iphone app meal delivery selection screen">
          </div>
          </div>
      </section>
@@ -147,23 +147,156 @@
         </h2>
        </div>     
 
-       <div class="container grid grid--3-cols">
+       <div class="container grid grid-cols--3">
         <div class="meal">
         <img src="Omnimeal-1.jpg" class="meal-img" alt="Japanese Gyozas" />
-         <span class="tag">Vegetarian</span>
+        <div class="meal-content">
+        <div class="meal-tags"> 
+        <span class="tag tag--vegetarian">Vegetarian</span>
+        </div>
         <p class="meal-title">Japanese Gyozas</p>
         <ul class="meal-attributes">
-            <li class="meal-attribute"><ion-icon name="flame-outline" class="meal-icon"></ion-icon><span>650 calories</span></li>
+            <li class="meal-attribute"><ion-icon name="flame-outline" class="meal-icon"></ion-icon><span><strong>650</strong> calories</span></li>
             <li class="meal-attribute"><ion-icon name="restaurant-outline" class="meal-icon"></ion-icon><span>Nutriscore &reg; 74</span></li>
-            <li class="meal-attribute"><ion-icon name="star-outline" class="meal-icon"></ion-icon><span>4.9 rating (537)</span></li>
+            <li class="meal-attribute"><ion-icon name="star-outline" class="meal-icon"></ion-icon><span><strong>4.9</strong> rating (537)</span></li>
         </ul>
         </div>
+        </div>
 
-        <div class="meal">Meals</div>
-        <div class="list">list of diets</div>
+        <div class="meal">
+            <img src="Omnimeal-2.jpg" class="meal-img" alt="Avocado Salad" />
+            <div class="meal-content">
+            <div class="meal-tags"> 
+            <span class="tag tag--vegan">Vegan</span>
+            <span class="tag tag--paleo">Paleo</span>
+            </div>
+            <p class="meal-title">Avocado Salad</p>
+            <ul class="meal-attributes">
+                <li class="meal-attribute"><ion-icon name="flame-outline" class="meal-icon"></ion-icon><span><strong>400</strong> calories</span></li>
+                <li class="meal-attribute"><ion-icon name="restaurant-outline" class="meal-icon"></ion-icon><span>Nutriscore &reg; <strong>92</strong></span></li>
+                <li class="meal-attribute"><ion-icon name="star-outline" class="meal-icon"></ion-icon><span><strong>4.8</strong> rating (441)</span></li>
+            </ul>
+            </div>
+            </div>
+    
+        <div class="diets">
+            <h3 class="heading-tertiary">Works with any diet:</h3>
+         <ul class="list">
+            <li class="list-item"><ion-icon name="checkmark-outline"></ion-icon><span>Vegetarian</span></li>
+            <li class="list-item"><ion-icon name="checkmark-outline"></ion-icon><span>Vegan</span></li>
+            <li class="list-item"><ion-icon name="checkmark-outline"></ion-icon><span>Pescatarian</span></li>
+            <li class="list-item"><ion-icon name="checkmark-outline"></ion-icon><span>Gluten-free</span></li>
+            <li class="list-item"><ion-icon name="checkmark-outline"></ion-icon><span>Lactose-free</span></li>
+            <li class="list-item"><ion-icon name="checkmark-outline"></ion-icon><span>Keto</span></li>
+            <li class="list-item"><ion-icon name="checkmark-outline"></ion-icon><span>Paleo</span></li>
+            <li class="list-item"><ion-icon name="checkmark-outline"></ion-icon><span>Low FODMAP</span></li>
+            <li class="list-item"><ion-icon name="checkmark-outline"></ion-icon><span>Kid-friendly</span></li>
+         </ul>   
+        </div>
+       </div>
+
+       <div class="container all-recipes">
+         <a href="#" class="link">See all recipes &rarr;</a>
        </div>
    </section>
 
+
+   <section class="section-testimonials grid grid-cols--2">
+      <div class="testimonials-container">
+        <span class="subheading">Testimonials</span>
+        <h2 class="heading-secondary">Once you try it, you can't go back</h2>
+      
+    
+    <div class="testimonials">
+        <figure class="testimonial">
+            <img src="img/Customer/customer5.jpg" class="testimonials-img" alt="photo of a customer">
+        <blockquote class="testimonial-text">
+        Inexpensive, healthy and great-tasting meals, without ever having to order
+        manually! It feels truly magical.
+        </blockquote>
+        <p class="testimonial-name">&mdash; Richard holt</p>
+        </figure>
+
+        <figure class="testimonial">
+            <img src="img/Customer/customer3.jpg" class="testimonials-img" alt="photo of a customer">
+        <blockquote class="testimonial-text">
+        The AI algorithm is crazy good, it chooses the right meals for me
+        every time. It's amazing not to worry about food anymore!
+        </blockquote>
+        <p class="testimonial-name">&mdash; Chris forth</p>
+        </figure>
+
+        <figure class="testimonials">
+            <img src="img/Customer/customer2.jpg" class="testimonials-img" alt="photo of a customer">
+        <blockquote class="testimonial-text">
+          I got Omnifood for the whole family, and it frees up so much time!
+          Plus, everything is organic and vegan and without plastic.
+        </blockquote>
+        <p class="testimonial-name">&mdash; Hannah smirhty</p>
+        </figure>
+
+        <figure class="testimonials">
+            <img src="img/Customer/customer1.jpg" class="testimonials-img" alt="photo of a customer">
+        <blockquote class="testimonial-text">
+        Omifood is a lifesaver!  I just started a company, so there's no time
+        for cooking. I couldn't live without  my daily meals now!
+        </blockquote>
+        <p class="testimonial-name">&mdash; Steven tyler</p>
+        </figure>
+     </div>
+    </div>
+
+    <div class="gallery">
+      <figure class="gallery-item">
+        <img src="edward-franklin-Nb_Q-M3Cdzg-unsplash.jpg" alt="Photo of beautifully arranged foog" />
+      </figure>  
+
+      <figure class="gallery-item">
+        <img src="img/Gallery/imggallery2.jpg" alt="Photo of beautifully arranged foog" />
+      </figure>  
+
+      <figure class="gallery-item">
+        <img src="img/Gallery/imggallery4.jpg" alt="Photo of beautifully arranged foog" />
+      </figure>  
+
+      <figure class="gallery-item">
+        <img src="img/Gallery/imggallery5.jpg" alt="Photo of beautifully arranged foog" />
+      </figure>  
+
+      <figure class="gallery-item">
+        <img src="syed-f-hashemi-p91GLhQv35o-unsplash.jpg" alt="Photo of beautifully arranged foog" />
+      </figure>  
+
+      <figure class="gallery-item">
+        <img src="img/Gallery/wimggallery3.jpg" alt="Photo of beautifully arranged foog" />
+      </figure>  
+
+      <figure class="gallery-item">
+        <img src="img/Gallery/imggallery1.jpg" alt="Photo of beautifully arranged foog" />
+      </figure>  
+
+      <figure class="gallery-item">
+        <img src="img/Gallery/imggallery4.jpg" alt="Photo of beautifully arranged foog" />
+      </figure>  
+
+      <figure class="gallery-item">
+        <img src="img/Gallery/imggallery6.jpg" alt="Photo of beautifully arranged foog" />
+      </figure>  
+
+      <figure class="gallery-item">
+        <img src="img/Gallery/imggallery4.jpg" alt="Photo of beautifully arranged foog" />
+      </figure>  
+
+      <figure class="gallery-item">
+        <img src="img/Gallery/wimggallery3.jpg" alt="Photo of beautifully arranged foog" />
+      </figure>  
+
+      <figure class="gallery-item">
+        <img src="img/Gallery/imggallery1.jpg" alt="Photo of beautifully arranged foog" />
+      </figure>  
+
+    </div>
+   </section>
   </main>
 
   <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>

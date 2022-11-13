@@ -228,12 +228,29 @@ span{
     padding: 9.6rem 0;
 }
 
+.meal{
+    box-shadow: 0 2.4rem 4.8rem rgba(0,0,0,0.075);
+    border-radius: 11px;
+    overflow: hidden;
+    transition: all 0.6s;
+}
+
+.meal:hover{
+    transform: translateY(-1.6rem);
+    box-shadow: 0 3.2rem 6.4rem rgba(0,0,0,0.06)
+}
+
 .meal-title {
     font-size: 2.0rem;
     color: #333;
     font-weight: 600;
     margin-bottom: 3.2rem;
 }
+
+.meal-content{
+    padding:  3.2rem 4.8rem 4.8rem 4.8rem; 
+}
+
 .tag{
     display: inline-block;
     padding: 0.4rem 0.8rem;
@@ -242,6 +259,24 @@ span{
     background-color: #51cf66;
     color: #555;
     border-radius: 1rem;
+    font-weight: 600;
+}
+
+.meal-tags{
+    margin-bottom: 1.2rem;
+    display: flex;
+    gap: 0.4rem;
+}
+
+.tag--vegetarian{
+    background-color: #51cf66;
+}
+.tag--vegan{
+    background-color: #94fae9;
+}
+
+.tag--paleo{
+  background-color: #e67e22;
 }
 
 .meal-attributes{
@@ -259,7 +294,7 @@ span{
 }
 
 .meal-img{
-    width: 50%;
+    width: 100%;
 }
 .meal-attribute span{
     color: #444;
@@ -269,4 +304,70 @@ span{
   height: 2.4rem;
   width: 2.4rem;
   color: #e67e22;
+}
+
+
+.list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.list-icon{
+    width: 3rem;
+    height: 3rem;
+    color: #e67e22;
+}
+
+.list-item{
+    font-size: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    align-items: center;
+}
+
+
+/****************************/
+/*    TESTIMONIALS SECTION  */
+/****************************/
+
+.section-testimonials{
+  padding: 9.6rem 0;
+  background-color: #fdf4d1;
+}
+
+.testimonials {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4.8rem;
+}
+
+.testimonial-text{
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-bottom: 1.4rem;
+}
+
+.testimonial-name{
+    font-size: 1.6rem;
+    color: #666;
+}
+
+.testimonials-img{
+  width: 6.2rem;
+  border-radius: 50%;
+  margin-bottom: 1.2rem;
+}
+
+.gallery{
+    display: grid;
+    border: 4px solid black;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.gallery-item img{
+    display: block;
+    width: 100%; 
 }
