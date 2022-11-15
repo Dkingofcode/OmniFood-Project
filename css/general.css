@@ -85,7 +85,19 @@ body{
     margin-bottom: 3.2rem;
  }
 
- .btn:link, .btn:visited{
+  .btn--form{
+    background-color: #5c3818;
+    color: #ffdef2;
+    align-self: end;
+    padding: 1.2rem;
+  }
+
+  .btn--form:hover{
+    background-color: #ffdef2;
+    color: #555;
+  }
+
+ .btn, .btn:link, .btn:visited{
     background-color: #e67e22;
     font-size: 1.8rem;
     padding: 1.2rem 3.0rem;
@@ -130,6 +142,9 @@ body{
     display: grid;
     row-gap: 9.6rem;
     column-gap: 6.0rem;
+}
+.grid:not(:last-child){
+    margin-bottom: 9.6rem;
 }
 
 .grid--center-v{

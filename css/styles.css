@@ -416,8 +416,39 @@ span{
 }
 
 .pricing-plan{
-    
+    border-radius: 11px;
+    width: 75%;
 }
+
+.pricing-plan--starter{
+    justify-self: end;
+    border: 2px solid #fdf4d1;
+    padding: 4.4rem;
+}
+
+.pricing-plan--complete{
+    background-color: #F2E5B8;
+    padding: 4.6rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.pricing-plan--complete::after{
+    content: "Best value";
+    position: absolute;
+    top: 6%;
+    right: -18%;
+
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #333;
+    background-color: #e6da32;
+    padding: 0.8rem 8rem;
+    transform: rotate(45deg);
+}
+
+
 
 .plan-name{
   color: #cf7717;
@@ -425,16 +456,144 @@ span{
   font-size: 1.4rem;
   text-transform: uppercase;
   letter-spacing: 0.75;
+  margin-bottom: 3.0rem;
 }
 
 .plan-text{
   font-size: 1.5rem;
   line-height: 1.0;
+  color: #647666;
 }
 
+
+
 .plan-price{
-  font-size: 6.0rem;
+  font-size: 5.8rem;
   font-weight: 600;
   color: #444;
   margin-bottom: 1.4rem;
+}
+
+.plan-price span{
+    font-size: 2.2rem;
+    color: #333;
+    font-weight: 500;
+    margin-right: 0.9rem;
+}
+
+.sign-up{
+    text-align: center;
+    margin-top: 4.8rem;
+}
+
+.feature-icon{
+    color: #e67e22;
+    height: 2.2rem;
+    width: 2.4rem;
+    margin-bottom: 3.2rem;
+    background-color: #fdf4d1;
+    border-radius: 50%;
+    padding: 1.4rem;
+}
+
+.feature-title{
+    font-size: 2.4rem;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 1.6rem;
+}
+
+.feature-text{
+    font-size: 1.6rem;
+    line-height: 1.0;
+}
+
+
+.section-cta{
+    padding: 9.6rem 0;
+}
+
+.cta{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    box-shadow: 0 2.4rem 2.8rem rgba(0,0,0,0.16);
+    border-radius: 9px;
+
+    background-image: linear-gradient(to right bottom, rgba(255, 180, 17, 0.856), chocolate);
+    height: 50rem;
+}
+
+.cta-text-box{
+   padding: 6.4rem;
+   color: #453400;
+}
+
+.cta-img-box{
+       background-size: cover;
+       background-position: center;
+        background-image: linear-gradient(to right bottom, rgba(255, 180, 17, 0.212), rgba(221, 141, 84, 0.253)), url("../herth.jpg");
+}
+
+
+.cta .heading-secondary {
+  color: inherit;
+  margin-bottom: 3.2rem;
+}
+
+.cta-text{
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-bottom: 4.8rem;
+}
+
+.cta-form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3.2rem;
+    row-gap: 2.4rem;
+}
+
+.cta-form label {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+}
+
+.cta-form input {
+   width: 100%;
+   padding: 1.2rem;
+   font-size: 1.8rem;
+   font-family: inherit;
+   border: none;
+   color: inherit;
+   background-color: #fff4d1;
+   border-radius: 6px;
+   box-shadow: 0 1px 2px rgba(0,0,0,0.09);
+}
+
+.cta-form input::placeholder{
+  color: #ddd;   
+}
+
+.cta-form select {
+   
+}
+
+.cta-form button {
+
+}
+
+.cta *:focus{
+    outline: none;
+    box-shadow: 0 0 0 0.8rem rgba(224, 153, 101, 0.253)
+}
+
+
+/*************************/
+/* FOOTER   */
+/**********************/
+
+.footer{
+    padding: 9.6rem 0;
 }
