@@ -508,9 +508,12 @@ span{
     line-height: 1.0;
 }
 
+/*****************************/
+/*  SECIOTN CTA */
+/***************************/
 
 .section-cta{
-    padding: 9.6rem 0;
+    padding: 9.6rem 0 12.8rem 0;
 }
 
 .cta{
@@ -518,9 +521,8 @@ span{
     grid-template-columns: 2fr 1fr;
     box-shadow: 0 2.4rem 2.8rem rgba(0,0,0,0.16);
     border-radius: 9px;
-
+    overflow: hidden;
     background-image: linear-gradient(to right bottom, rgba(255, 180, 17, 0.856), chocolate);
-    height: 50rem;
 }
 
 .cta-text-box{
@@ -560,7 +562,8 @@ span{
     margin-bottom: 1.2rem;
 }
 
-.cta-form input {
+.cta-form input,
+.cta-form select {
    width: 100%;
    padding: 1.2rem;
    font-size: 1.8rem;
@@ -586,7 +589,7 @@ span{
 
 .cta *:focus{
     outline: none;
-    box-shadow: 0 0 0 0.8rem rgba(224, 153, 101, 0.253)
+    box-shadow: 0 0 0 0.8rem rgba(247, 103, 0, 0.253)
 }
 
 
@@ -595,5 +598,69 @@ span{
 /**********************/
 
 .footer{
-    padding: 9.6rem 0;
+    padding: 12.6rem 0;
+    border-top: #bbb;
+}
+
+.footer-logo{
+    display: block;
+    margin-bottom: 3.2rem;
+}
+
+.grid--footer{
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+
+.logo-col{
+  display: flex;
+  flex-direction: column;
+}
+
+.social-links{
+  list-style: none;
+  display: flex;
+  gap: 2.3rem;
+}
+
+.social-icon{
+    height: 2.2rem;
+    width: 2.1rem;
+}
+
+.copyright{
+    font-size: 1.3rem;
+    line-height: 1.4;
+    color: #767676;
+    margin-top: auto;
+}
+
+.footer-heading{
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 1.6rem;
+}
+
+.contacts{
+    font-style: normal;
+    font-size: 1.4rem;
+    line-height: 1.6;;
+}
+
+.footer-nav{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.footer-link:link,
+.footer-link:visited{
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #777;
+}
+
+.footer-link:hover,
+.footer-link:active{
+    color: #ccc;
 }
