@@ -6,6 +6,14 @@ console.log(myName);
 console.log(h1);
 
 
+////////////////////////////////////
+// Set current year
+const YearEl = document.querySelector(".year");
+const currentYear = new Date().getFullYear();
+console.log(currentYear)
+YearEl.textContent = currentYear;
+
+
 // MOBILE NAVIGATION
 const btnNav = document.querySelector(".btn-mobile-nav");
 const headerEl = document.querySelector(".header");
@@ -70,7 +78,16 @@ function  checkFlexGap() {
 
     flex.appendChild(document.createElement("div"));
     flex.appendChild(document.createElement("div"));
+
+    document.body.appendChild(flex);
+    var isSupported = flex.scrollHeight === 1;
+    flex.parentNode.removeChild(flex);
+    console.log(isSupported);
+
+    if(!isSupported) document.body.classList.add("no-flexbox-gap");
 }
+
+checkFlexGap();
 
 
 
