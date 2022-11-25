@@ -55,7 +55,7 @@ Letter spacing
 html{
     font-size: 10px;
     overflow-x: hidden;
-    /* scroll-behavior: smooth;  */
+     scroll-behavior: smooth;  
 }
 
 body{
@@ -270,4 +270,8 @@ body{
 
  .center-text{
     text-align: center;
+ }
+
+ #cta{
+    background-color: #444;
  }

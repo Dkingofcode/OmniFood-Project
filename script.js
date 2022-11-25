@@ -30,7 +30,6 @@ allLinks.forEach(function(link){
     link.addEventListener('click', function(e){
         e.preventDefault();
         const href = link.getAttribute('href');
-        console.log(href);
 
         // Scroll back to top
         if(href === "#")
@@ -42,32 +41,35 @@ allLinks.forEach(function(link){
 
            // Scroll to other links
            if (href !== "#" && href.startsWith('#')){
-             const sectionEl = document.querySelector(href);
-             sectionEl.scrollIntoView({ behaviour: "smooth" });
+             const sectionP = document.querySelector(href);
+             console.log(sectionP);
+             sectionP.scrollIntoView({behaviour: "smooth"});
            }
-
-           // Close mobile navigation
-           if(link.classList.contains("main-nav-link"))
-           headerEl.classList.toggle("nav-open");
+        });
     });
-});
-const sectionHero = document.querySelector(".section-hero") 
 
-const obs = new IntersectionObserver(
-    function(entries) {
-       const ent = entries[0];
-       console.log(ent);
+//            // Close mobile navigation
+//            if(link.classList.contains("main-nav-link"))
+//            headerEl.classList.toggle("nav-open");
+//     });
+// });
+// const sectionHero = document.querySelector(".section-hero") 
 
-       if(ent.intersecting === false) {
-         document.body.classList.add("sticky");  
-       }
-    }, 
-    {
-        // In the viewport
-        root: null,
-        threshold: 0,
-    })
-obs.observe(sectionHero);
+// const obs = new IntersectionObserver(
+//     function(entries) {
+//        const ent = entries[0];
+//        console.log(ent);
+
+//        if(ent.intersecting === false) {
+//          document.body.classList.add("sticky");  
+//        }
+//     }, 
+//     {
+//         // In the viewport
+//         root: null,
+//         threshold: 0,
+//     })
+// obs.observe(sectionHero);
 
 // Fixing flexbox gap property missing in some Safari versions
 function  checkFlexGap() {
